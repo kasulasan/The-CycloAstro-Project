@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build CycloAstro",
+      "type": "shell",
+      "command": "make -f Makefile_CycloAstro"
+    }
+  ]
+}

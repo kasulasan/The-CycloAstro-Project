@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run CycloAstro Python",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/cycloastro_python/orbit_sim.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run CycloAstro C module",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/cycloastro_sim",
+      "preLaunchTask": "Build CycloAstro",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "lldb",
+      "console": "integratedTerminal"
+    }
+  ]
+}
