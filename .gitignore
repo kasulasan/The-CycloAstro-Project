@@ -1,0 +1,22 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# C build outputs
+cycloastro_sim
+*.o
+*.out
+
+# Environment folders
+.env/
+.venv/
+conda/
+.conda/
+cycloastro-env/
+
+# VS Code settings
+.vscode/
+
+# macOS system files
+.DS_Store
