@@ -1,3 +1,4 @@
+
 # The CycloAstro Project
 
 A hybrid Python and C computational framework for simulating, visualizing, and analyzing celestial dynamics.  
@@ -48,5 +49,35 @@ python -c "import numpy, matplotlib, astropy, rebound; print('CycloAstro environ
 make -f Makefile_CycloAstro run
 
 Welcome to The CycloAstro Project — C module initialized!
+
+```
+---
+
+## Quick Start
+
+Follow these steps to set up and run the CycloAstro Project quickly.
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/kasulasan/The-CycloAstro-Project.git
+cd The-CycloAstro-Project
+
+# 2. Create and activate the Conda environment
+conda env create -f environment.yml
+conda activate cycloastro
+
+# 3. Verify setup and dependencies
+python -c "import numpy, matplotlib, astropy, rebound; print('CycloAstro environment ready!')"
+
+# 4. Run the Python simulation
+python cycloastro_python/orbit_sim.py
+```
+---
+
+For complete setup instructions, including building the C and C++ modules and configuring development tools, see [SETUP.md](SETUP.md).
+
+
+
+
 
 
