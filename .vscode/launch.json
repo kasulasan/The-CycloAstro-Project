@@ -1,6 +1,7 @@
 {
   "version": "0.2.0",
   "configurations": [
+
     {
       "name": "Run CycloAstro Python",
       "type": "python",
@@ -17,6 +18,15 @@
       "cwd": "${workspaceFolder}",
       "MIMode": "lldb",
       "console": "integratedTerminal"
-    }
+    },{
+  "name": "Run CycloAstro C++ module",
+  "type": "cppdbg",
+  "request": "launch",
+  "program": "${workspaceFolder}/cycloastro_cpp/cycloastro_cpp_sim",
+  "preLaunchTask": "Build CycloAstro C++",
+  "cwd": "${workspaceFolder}",
+  "MIMode": "lldb",
+  "console": "integratedTerminal"
+}
   ]
 }

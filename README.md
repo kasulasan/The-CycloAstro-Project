@@ -1,4 +1,10 @@
+
 # The CycloAstro Project
+[![CycloAstro CI](https://github.com/kasulasan/The-CycloAstro-Project/actions/workflows/test.yml/badge.svg)](https://github.com/kasulasan/The-CycloAstro-Project/actions/workflows/test.yml)
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)
+![Status](https://img.shields.io/badge/status-active-success)
 
 A hybrid Python and C computational framework for simulating, visualizing, and analyzing celestial dynamics.  
 Combines the scientific flexibility of Python (Rebound, Astropy, NumPy, Matplotlib) with the speed and control of C for intensive orbital mechanics calculations.
@@ -48,5 +54,35 @@ python -c "import numpy, matplotlib, astropy, rebound; print('CycloAstro environ
 make -f Makefile_CycloAstro run
 
 Welcome to The CycloAstro Project — C module initialized!
+
+```
+---
+
+## Quick Start
+
+Follow these steps to set up and run the CycloAstro Project quickly.
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/kasulasan/The-CycloAstro-Project.git
+cd The-CycloAstro-Project
+
+# 2. Create and activate the Conda environment
+conda env create -f environment.yml
+conda activate cycloastro
+
+# 3. Verify setup and dependencies
+python -c "import numpy, matplotlib, astropy, rebound; print('CycloAstro environment ready!')"
+
+# 4. Run the Python simulation
+python cycloastro_python/orbit_sim.py
+```
+---
+
+For complete setup instructions, including building the C and C++ modules and configuring development tools, see [SETUP.md](SETUP.md).
+
+
+
+
 
 

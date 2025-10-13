@@ -4,7 +4,17 @@
     {
       "label": "Build CycloAstro",
       "type": "shell",
-      "command": "make -f Makefile_CycloAstro"
-    }
+      "command": "make -f Makefile_CycloAstro",
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+  "label": "Build CycloAstro C++",
+  "type": "shell",
+  "command": "clang++ cycloastro_cpp/main.cpp -o cycloastro_cpp/cycloastro_cpp_sim",
+  "problemMatcher": ["$gcc"]
+}
   ]
 }
+
