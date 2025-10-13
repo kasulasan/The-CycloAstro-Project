@@ -103,3 +103,25 @@ This runs the Python orbital simulation using the Rebound engine and confirms in
 ---
 
 With this setup, the CycloAstro Project can be built and executed reproducibly on any supported platform.
+
+---
+
+## 7. Quick Test
+
+After completing the setup steps above, you can verify that both the C and Python components are functioning properly.
+
+### Test the C module
+Run:
+make -f Makefile_CycloAstro run
+
+Expected output:
+Welcome to The CycloAstro Project — C module initialized!
+
+### Test the Python simulation
+Run:
+python cycloastro_python/orbit_sim.py
+
+Expected output:
+A plot or printed message confirming that the Rebound orbital simulation has executed successfully.
+
+If both tests run without errors, your CycloAstro Project setup is complete and ready for development or research use.
