@@ -1,0 +1,40 @@
+name: CycloAstro CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        activate-environment: cycloastro
+        environment-file: environment.yml
+        python-version: 3.11
+        auto-activate-base: false
+
+    - name: Verify environment
+      shell: bash -l {0}
+      run: |
+        conda info
+        python -c "import numpy, matplotlib, astropy, rebound; print('Environment OK')"
+
+    - name: Build C module
+      shell: bash -l {0}
+      run: |
+        make -f Makefile_CycloAstro run
+
+    - name: Run Python simulation
+      shell: bash -l {0}
+      run: |
+        python cycloastro_python/orbit_sim.py
+
