@@ -1,5 +1,6 @@
 
 # The CycloAstro Project
+[![CycloAstro CI](https://github.com/kasulasan/The-CycloAstro-Project/actions/workflows/test.yml/badge.svg)](https://github.com/kasulasan/The-CycloAstro-Project/actions/workflows/test.yml)
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)
