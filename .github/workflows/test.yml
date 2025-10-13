@@ -14,6 +14,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Install system build tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential
+
     - name: Set up Conda
       uses: conda-incubator/setup-miniconda@v3
       with:
@@ -21,6 +26,10 @@ jobs:
         environment-file: environment.yml
         python-version: 3.11
         auto-activate-base: false
+
+    - name: Install rebound manually
+      shell: bash -l {0}
+      run: pip install rebound
 
     - name: Verify environment
       shell: bash -l {0}
@@ -37,4 +46,3 @@ jobs:
       shell: bash -l {0}
       run: |
         python cycloastro_python/orbit_sim.py
-
