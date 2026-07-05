@@ -1,0 +1,48 @@
+{
+  "script": "compromise_sweep.py",
+  "timestamp": "2026-07-05T19:43:46.160957+00:00",
+  "span_yr": 10000000,
+  "meas_interval_yr": 100,
+  "dt_yr": 0.035,
+  "sigma_p": 0.0001,
+  "sigma_acc": 6e-05,
+  "gating": "none",
+  "sweep_sigmas": [
+    3e-05,
+    9e-05,
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03
+  ],
+  "ramp": {
+    "sigma0": 3e-05,
+    "decades_per_myr": 0.25
+  },
+  "eval_window_myr": [
+    5.0,
+    10.0
+  ],
+  "smooth_kyr": 405,
+  "rebound_anchor": "results/rebound_300Myr/rebound.csv",
+  "n_workers": 8,
+  "wall_minutes": 6.1,
+  "runtimes_min": {
+    "sz9e-05": 6.0,
+    "sz3e-04": 6.0,
+    "sz3e-02": 6.0,
+    "sz1e-02": 6.0,
+    "age_ramp": 6.0,
+    "sz3e-05": 6.0,
+    "sz1e-03": 6.1,
+    "sz3e-03": 6.1
+  },
+  "versions": {
+    "python": "3.10.19",
+    "numpy": "2.0.1",
+    "pandas": "2.3.3",
+    "rebound": "4.4.10"
+  },
+  "host": "Santoshs-MacBook-Pro.local"
+}

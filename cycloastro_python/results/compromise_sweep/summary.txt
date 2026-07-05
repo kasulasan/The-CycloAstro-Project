@@ -1,0 +1,26 @@
+COMPROMISE SWEEP — R_ecc dial + age-ramp (priority 1, for Linda)
+span 0-10 Myr, cadence 100 yr, no gating
+metrics window 5.0-10.0 Myr; anchor separation RMS = 5.206e-03
+
+   sigma_z   K_H_mean  rms_to_zeebe  rms_to_rebound        lam
+3.0000e-05 9.2227e-01    9.6562e-06      5.2071e-03 1.8510e-03
+9.0000e-05 5.9747e-01    9.7972e-05      5.2176e-03 1.8431e-02
+3.0000e-04 1.3693e-01    8.2325e-04      5.2872e-03 1.3473e-01
+1.0000e-03 1.6403e-02    6.1656e-04      5.0840e-03 1.0816e-01
+3.0000e-03 1.8921e-03    1.4977e-03      4.3310e-03 2.5695e-01
+1.0000e-02 1.7161e-04    3.3325e-03      2.3771e-03 5.8366e-01
+3.0000e-02 1.8655e-05    4.8826e-03      4.9031e-04 9.0875e-01
+
+lam = rms_to_zeebe/(rms_to_zeebe+rms_to_rebound): 0 = on Zeebe, 1 = on REBOUND
+balanced trajectory (equal distance to both anchors) at sigma_z ~ 7.48e-03
+note: distances of intermediate settings vary at the chaotic-
+realization level (e.g. 3e-4 vs 1e-3), so the dial is smooth only to within that variance.
+
+age-ramp: sigma_z(t) = 3e-05 * 10^(t * 0.25 /Myr)  (x10 per 4 Myr)
+  K_H: 0.961 at present -> 2.51e-04 at 10 Myr
+  in 5.0-10.0 Myr window: rms to Zeebe 6.098e-03, to REBOUND 6.651e-03 (lam=0.48)
+  after release the estimate is a free REBOUND-class trajectory:
+  it stays inside the chaotic envelope but does NOT re-join either
+  anchor pointwise (Lyapunov ~5 Myr). Ramp rate is illustrative.
+
+wall time 6.1 min (8 parallel workers)
