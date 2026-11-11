@@ -19,3 +19,6 @@ cycloastro-env/
 
 # macOS system files
 .DS_Store
+
+# day-trader-skill working data (configs, plans, logs)
+trader/
